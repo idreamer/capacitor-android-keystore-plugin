@@ -40,6 +40,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+    sourceSets {
+        test {
+            java.srcDirs = ['src/test/java', 'src/main/java']
+        }
+    }
 }
 
 repositories {
@@ -52,7 +57,9 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':capacitor-android')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
-    testImplementation "junit:junit:$junitVersion"
-    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
-    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
+    implementation 'com.jakewharton.timber:timber:4.5.1'
+//    implementation 'org.testng:testng:6.9.6'
+//    testImplementation "junit:junit:$junitVersion"
+//    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+//    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
 }

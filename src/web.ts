@@ -10,4 +10,13 @@ export class IKeystorePluginWeb
     console.log('ECHO', options);
     return options;
   }
+
+  async decrypt(options: { value: string; }): Promise<{ value: string; }> {
+    console.log("option input", options.value);
+    return { value: "test" };
+  }
+  async encrypt(options: { value: string; }): Promise<{ value: string; }> {
+    console.log("option input", options.value);
+    return { value: "test" };
+  }
 }
