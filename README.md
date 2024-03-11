@@ -1,7 +1,7 @@
 # capacitor-android-keystore-plugin
 This plugin uses Android Keystore to encrypt/decrypt a string. 
 
-![]()
+![DEMO Video](https://github.com/idreamer/capacitor-android-keystore-plugin/blob/main/resources/Capacitor_Keystore_Plugin_Demo.mp4)
 
 ## Install
 
