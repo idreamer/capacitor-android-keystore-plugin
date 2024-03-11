@@ -1,4 +1,4 @@
-# ikeystore-plugin
+# capacitor-android-keystore-plugin
 
 Keystore
 
